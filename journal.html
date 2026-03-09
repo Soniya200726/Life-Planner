@@ -18,42 +18,56 @@
     </ul>
   </nav>
 
-  <!-- PAGE HEADER -->
-  <header class="page-header">
-    <h1>My Journal</h1>
-    <p>Write your thoughts and reflect on your day</p>
-  </header>
+<!-- JOURNAL HEADER -->
 
-  <!-- JOURNAL CONTENT -->
-  <div class="journal-container">
+<section class="journal-header">
+<h1>My Journal</h1>
+<p>Write your thoughts and reflect on your day</p>
+</section>
 
-    <!-- ADD JOURNAL ENTRY -->
-    <section class="journal-form">
-      <h2>New Entry</h2>
-      <input type="text" placeholder="Title">
-      <textarea placeholder="Write your thoughts here..."></textarea>
-      <button>Add Entry</button>
-    </section>
 
-    <!-- JOURNAL ENTRIES -->
-    <section class="journal-list">
-      <h2>Previous Entries</h2>
+<!-- JOURNAL CONTAINER -->
 
-      <div class="journal-card">
-        <h3>Productive Day</h3>
-        <p>Today I completed my UI design and practiced CSS.</p>
-        <span>📅 04 Mar 2026</span>
-      </div>
+<div class="journal-container">
 
-      <div class="journal-card">
-        <h3>Learning Progress</h3>
-        <p>I understood grid and flexbox clearly.</p>
-        <span>📅 03 Mar 2026</span>
-      </div>
+<!-- NEW ENTRY -->
 
-    </section>
+<section class="journal-entry">
 
-  </div>
+<h2>New Entry</h2>
+
+<input type="text" placeholder="Title">
+
+<textarea placeholder="Write your thoughts here..." rows="6"></textarea>
+
+<button>Add Entry</button>
+
+</section>
+
+
+<!-- PREVIOUS ENTRIES -->
+
+<section class="journal-list">
+
+<h2>Previous Entries</h2>
+
+<div class="entry-card">
+<h3>😊Productive Day</h3>
+<p>Today I completed my UI design and practiced CSS.</p>
+<span class="entry-date">04 Mar 2026</span>
+</div>
+
+<div class="entry-card">
+<h3>📚Learning Progress</h3>
+<p>I understood grid and flexbox clearly.</p>
+<span class="entry-date">03 Mar 2026</span>
+</div>
+
+</section>
+
+</div>
+
+  
 
 </body>
 </html>
