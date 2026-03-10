@@ -1,3 +1,8 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#f5f6fa;
+margin:0;
+}
 * {
   margin: 0;
   padding: 0;
@@ -431,6 +436,7 @@ box-shadow:0 5px 15px rgba(59, 105, 244, 0.805);
 background:#eef1f8;
 padding:20px;
 border-radius:15px;
+margin-top: 20px;
 margin-bottom:30px;
 transition:0.2s;
 box-shadow: 0 5px 15px rgba(59, 105, 244, 0.805);
@@ -444,43 +450,133 @@ transform:translateY(-3px);
 font-size:12px;
 color:#666;
 }
-/* GOALS PAGE */
+/* GOALS HEADER */
 
+.goals-header{
+background: linear-gradient(135deg,#6a5acd,#7b68ee);
+color:white;
+padding:35px;
+margin:20px;
+border-radius:10px;
+}
+/* GOALS CONTAINER */
 .goals-container{
-padding:20px;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:20px;
+padding:20px;
 }
-
+/* GOAL CARD */
 .goal-card{
 background:white;
 padding:20px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.05);
-}
-
-.progress-bar{
-background:#e5e7eb;
-height:10px;
 border-radius:10px;
-margin-top:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+.goal-card:hover{
+transform:translateY(-5px);
+}
+/* GOAL TITLE */
+.goal-title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:8px;
+}
+/* GOAL DATE */
+.goal-date{
+font-size:13px;
+color:#777;
+margin-bottom:10px;
+}
+/* PROGRESS BAR */
+.progress-bar{
+width:100%;
+height:8px;
+background:#e0e0e0;
+border-radius:10px;
 overflow:hidden;
 }
-
 .progress{
-height:10px;
-background:#4f46e5;
+height:100%;
+background:#5a4bff;
+border-radius:10px;
+}
+nav a.active{
+color:#6a5acd;
+font-weight:bold;
+border-bottom:2px solid #6a5acd;
+}
+nav a{
+text-decoration:none;
+margin-left:20px;
+color:#333;
+transition:0.3s;
 }
 
-.js{
-width:60%;
+nav a:hover{
+color:#6a5acd;
+}
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+/* Navbar */
+
+.navbar{
+flex-direction:column;
+align-items:flex-start;
 }
 
-.workout{
-width:40%;
+nav{
+margin-top:10px;
 }
 
-.reading{
-width:75%;
+nav a{
+display:block;
+margin:5px 0;
+}
+
+/* Goals page */
+
+.goals-container{
+grid-template-columns:1fr;
+}
+
+/* Journal page */
+
+.journal-container{
+grid-template-columns:1fr;
+}
+
+/* Tasks page */
+
+.task-container{
+grid-template-columns:1fr;
+}
+
+}
+@media (max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding:30px 20px;
+}
+
+.hero img{
+width:100%;
+max-width:250px;
+margin-top:15px;
+}
+
+.dashboard{
+grid-template-columns:1fr;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
 }
